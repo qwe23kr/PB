@@ -4,10 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>파일노리개</title>
+<title>Insert title here</title>
 </head>
 <body>
-<div>파일업로드 프로젝트</div>
+<div>파일 업로드 프로젝트</div>
+<img src="/resources/1.jpg">
 <a href="/photo/list">게시판가기</a>
 </body>
 </html>

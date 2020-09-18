@@ -5,5 +5,10 @@
 <configuration>
 <settings>
 <setting name="mapUnderscoreToCamelCase" value="true"/>
+<setting name="jdbcTypeForNull" value="NULL"/>
 </settings>
+<typeAliases>
+
+<typeAlias type="com.file.board.vo.PhotoBoardVO" alias="pb"/>
+</typeAliases>
 </configuration>

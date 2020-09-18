@@ -1,6 +1,10 @@
 package com.file.board.controller;
 
 
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import javax.sql.DataSource;
 
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -9,16 +13,18 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.file.board.vo.PhotoBoardVO;
+
 @Controller
-public class HomeController {
-@Autowired
-private SqlSessionFactory ssf;
+public class HomeColtroller {
+	@Autowired
+	private SqlSessionFactory ssf;
+	
 	@RequestMapping("/")
 	public String goHome(Model model) {
-		SqlSession ss =ssf.openSession();
-	    
+		SqlSession ss = ssf.openSession();
+		System.out.println(ss);
 		model.addAttribute("msg","Hello~");
 		return "index";
 	}
-
 }
